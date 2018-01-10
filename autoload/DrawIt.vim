@@ -2459,7 +2459,7 @@ fun! s:Spacer(debut, fin, cols) range
   if a:cols <= 0
    let width = &textwidth
    if width <= 0
-    let width= &columns
+    let width= &columns - 7
    endif
   else
    let width= a:cols
